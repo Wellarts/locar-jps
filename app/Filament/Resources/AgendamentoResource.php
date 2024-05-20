@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class AgendamentoResource extends Resource
 {
+    
     protected static ?string $model = Agendamento::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
