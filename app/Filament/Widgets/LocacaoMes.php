@@ -16,11 +16,12 @@ class LocacaoMes extends ChartWidget
     protected function getData(): array
     {
         $data = Trend::model(Locacao::class)
+        ->dateColumn('data_saida')
         ->between(
             start: now()->startOfYear(),
             end: now()->endOfYear(),
         )
-        ->perMonth('data_saida')
+        ->perMonth()
         ->sum('valor_total');
 
         return [
