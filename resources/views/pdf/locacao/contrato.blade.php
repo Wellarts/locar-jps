@@ -310,7 +310,7 @@
 <div>
     <p class="parag">
         <b>LOCADOR(A): JPS VEÍCULOS LTDA</b>, empresa de direito privado inscrita no CNPJ sob Nº 43.354.322/0001-41, com sede em Rua Benjamin Gerlach, 584 – Fazenda Santo Antônio – São José/SC.<br><br>
-        <b>LOCATÁRIO(A): {{$locacao->Cliente->nome}}</b> ,inscrita no CPF {{$cpfCnpj}}, portador do RG {{$locacao->Cliente->rg}} -  {{$locacao->Cliente->exp_rg}}, CNH {{$locacao->Cliente->cnh}}   residente e domiciliado {{$locacao->Cliente->endereco}} - {{$locacao->Cliente->cidade->nome}} - {{$locacao->Cliente->estado->uf}}.<br><br>
+        <b>LOCATÁRIO(A): {{$locacao->Cliente->nome}}</b> ,inscrito no CPF {{$cpfCnpj}}, portador do RG {{$locacao->Cliente->rg}} -  {{$locacao->Cliente->exp_rg}}, CNH {{$locacao->Cliente->cnh}}   residente e domiciliado {{$locacao->Cliente->endereco}} - {{$locacao->Cliente->cidade->nome}} - {{$locacao->Cliente->estado->uf}}.<br><br>
 
 
         As partes acima identificadas têm ente si, justo e acertado o presente Contrato de Locação de Veículo por Prazo Determinado, que se regerá pelas cláusulas seguintes e pelas condições descritas no presente.<br><br>
