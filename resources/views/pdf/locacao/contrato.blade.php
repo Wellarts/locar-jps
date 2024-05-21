@@ -334,7 +334,7 @@
        <u> Parágrafo Oitavo:</u> Será de responsabilidade do LOCATÁRIO todas as despesas referentes à utilização do veículo, desde que não seja causado por imprudência do LOCATÁRIO direta e indiretamente, exemplo: batidas, amassados superficiais, super aquecimento por falta de atenção, pneus rasgados, etc.<br><br>
 
         <b>DA GARANTIA</b><br>
-        <b>CLÁUSULA 3ª</b>. O LOCATÁRIO concorda desde já em pagar, a título de fiança no caso de sinistro ou danos, a sinal caução no valor de R$ 1000,00 (hum mil reais). sendo pago por toda semana R$50,00 (cinquenta reais) até completar os R$ 1.000,00 (hum mil reais).<br>
+        <b>CLÁUSULA 3ª</b>. O LOCATÁRIO concorda desde já em pagar, a título de fiança no caso de sinistro ou danos, a sinal caução no valor de R$ 1000,00 (hum mil reais). Sendo pago de acordo com as observações da ficha de locação.<br>
 
         <u>Parágrafo Primeiro:</u> A caução será devolvida caso entregue na retirada do veículo ao final do período 30 dias após termino da locação ao LOCATÁRIO, salvo, em casos de danos identificados na vistoria ou multa por quebra de contrato, bem como a título de compensação de aluguéis.<br>
         <u>Parágrafo Segundo:</u> Em caso de não pagamento das obrigações, nos termos definidos neste instrumento, poderá o LOCADOR realizar a execução do referido título de crédito, utilizando-se dos meios judiciais e extrajudiciais.<br><br>
