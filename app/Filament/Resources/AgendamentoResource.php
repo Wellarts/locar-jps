@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class AgendamentoResource extends Resource
 {
-    
+
     protected static ?string $model = Agendamento::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
@@ -90,13 +90,16 @@ class AgendamentoResource extends Resource
                                     ->label('Qtd Diárias')
                                     ->required(),
                                 Forms\Components\TextInput::make('valor_total')
+                                    ->numeric()
                                     ->readOnly()
                                     ->label('Valor Total')
                                     ->required(),
                                 Forms\Components\TextInput::make('valor_desconto')
+                                    ->numeric()
                                     ->label('Valor Desconto'),
                                 Forms\Components\TextInput::make('valor_pago')
                                     ->hint('Pagamento Antecipado')
+                                    ->numeric()
                                     ->required()
                                     ->label('Valor Pago')
                                     ->reactive()
@@ -105,6 +108,7 @@ class AgendamentoResource extends Resource
                                     }),
 
                                 Forms\Components\TextInput::make('valor_restante')
+                                    ->numeric()
                                     ->readOnly()
                                     ->label('Valor Restante')
                                     ->required(),
