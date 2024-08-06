@@ -59,8 +59,8 @@ class CustoVeiculoResource extends Resource
                     ->columnSpanFull()
                     ->required(),
                 Forms\Components\TextInput::make('valor')
-                    ->numeric()
                     ->label('Valor Total')
+                    ->numeric()
                     ->required(),
             ]);
     }
@@ -69,7 +69,7 @@ class CustoVeiculoResource extends Resource
     {
         return $table
             ->columns([
-            Tables\Columns\TextColumn::make('fornecedor.nome')
+                Tables\Columns\TextColumn::make('fornecedor.nome')
                 ->sortable(),
             Tables\Columns\TextColumn::make('veiculo.modelo')
                 ->sortable()
@@ -80,7 +80,7 @@ class CustoVeiculoResource extends Resource
                 ->label('Km Atual'),
             Tables\Columns\TextColumn::make('data')
                 ->sortable()
-                ->date(),
+                ->date('d/m/Y'),
             Tables\Columns\TextColumn::make('valor')
                 ->summarize(Sum::make()->money('BRL')->label('Total'))
                 ->money('BRL')
