@@ -57,7 +57,8 @@ class AdminPanelProvider extends PanelProvider
                 ContasPagarHoje::class,
                 ContasReceberHoje::class,
                 StatsVeiculos::class,
-                AgendamentosLocacao::class
+                AgendamentosLocacao::class,
+                StatsVeiculos::class
                 
                 
             ])
