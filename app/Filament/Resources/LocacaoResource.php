@@ -109,7 +109,7 @@ class LocacaoResource extends Resource
                                                     ->live(),
                                                 Forms\Components\Select::make('cidade_id')
                                                     ->label('Cidade')
-                                                    ->default(5407)
+                                                    ->default(4401)
                                                     ->native(false)
                                                     ->searchable()
                                                     ->required()
