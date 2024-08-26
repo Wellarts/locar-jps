@@ -10,7 +10,7 @@ use Spatie\Activitylog\Traits\LogsActivity;
 class Veiculo extends Model
 {
     use HasFactory, LogsActivity;
-
+   
     protected $fillable = [
         'marca_id',
         'modelo',
@@ -31,7 +31,8 @@ class Veiculo extends Model
         'data_compra',
         'status',
         'status_alerta',
-        'status_locado'
+        'status_locado',
+        'obs',
     ];
 
     public function Marca()
