@@ -28,7 +28,7 @@
 
     #ficha td {
     border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
+    padding: 0px 10px;
     }
 
     .tx {
@@ -301,147 +301,208 @@
 <table style="width: 100%">
     <tr>
       <td><img src="{{ asset('img/logo.png') }}" alt="Logo"></td>
-      <td> <p style="width: 100%; font-size:20px; font-weight: bold" align="center">Contrato de Locação de Veículos</p>
+      
 
       </td>
   </tr>
   </table>
 </div>
 <div>
-    <p class="parag">
-        <b>LOCADOR(A): JPS VEÍCULOS LTDA</b>, empresa de direito privado inscrita no CNPJ sob Nº 43.354.322/0001-41, com sede em Rua Benjamin Gerlach, 584 – Fazenda Santo Antônio – São José/SC.<br><br>
-        <b>LOCATÁRIO(A): {{$locacao->Cliente->nome}}</b>, inscrito no CPF {{$cpfCnpj}}, portador do RG {{$locacao->Cliente->rg}} -  {{$locacao->Cliente->exp_rg}}, CNH {{$locacao->Cliente->cnh}}   residente e domiciliado {{$locacao->Cliente->endereco}} - {{$locacao->Cliente->cidade->nome}} - {{$locacao->Cliente->estado->uf}}.<br><br>
+    <p style="text-align: center;"><strong>CONTRATO DE LOCA&Ccedil;&Atilde;O DE VE&Iacute;CULO</strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><strong>LOCADOR(A): JPS VE&Iacute;CULOS LTDA</strong>, empresa de direito privado inscrita no CNPJ sob N&ordm; 43.354.322/0001-41, com sede em Rua Benjamin Gerlach, 584 &ndash; Fazenda Santo Ant&ocirc;nio &ndash; S&atilde;o Jos&eacute;/SC.&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>LOCAT&Aacute;RIO(A): {{$locacao->Cliente->nome}}, motorista de aplicativo, inscrita no CPF {{$locacao->Cliente->cpf}}, portador do RG {{$locacao->Cliente->rg}} - {{$locacao->Cliente->exp_rg}}, CNH {{$locacao->Cliente->cnh}}, residente e domiciliado {{$locacao->Cliente->endereco}} - {{$locacao->Cliente->Cidade->nome}} - {{$locacao->Cliente->Estado->uf}}</strong></p>
+<p style="text-align: justify;">As partes acima identificadas t&ecirc;m ente si, justo e acertado o presente Contrato de Loca&ccedil;&atilde;o de Ve&iacute;culo por Prazo Determinado, que se reger&aacute; pelas cl&aacute;usulas seguintes e pelas condi&ccedil;&otilde;es descritas no presente.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DO OBJETO DO CONTRATO</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 1&ordf;. </strong>O presente contrato tem como OBJETO a loca&ccedil;&atilde;o do ve&iacute;culo: {{$locacao->Veiculo->modelo}} - {{$locacao->Veiculo->Marca->nome}}, cor {{$locacao->Veiculo->cor}}, combust&iacute;vel &aacute;lcool/gasolina com placas {{$locacao->Veiculo->placa}}.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> O ve&iacute;culo, como dito, &eacute; de propriedade ou sob administra&ccedil;&atilde;o do LOCADOR e entregue com todos os equipamentos exigidos pelo C&oacute;digo de Tr&acirc;nsito Brasileiro e em perfeitas condi&ccedil;&otilde;es de uso e seguran&ccedil;a, conforme checklist anexo 1, devidamente assinado pelo LOCAT&Aacute;RIO.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> No ve&iacute;culo objeto do presente contrato haver&aacute; publicidade da empresa locadora.</p>
+<p style="text-align: justify;">Par&aacute;grafo terceiro: &Eacute; de <span style="text-decoration: underline;">obrigatoriedade</span> do locat&aacute;rio sempre manter o n&iacute;vel do combust&iacute;vel com pelo menos &frac14; do tanque, principalmente em ve&iacute;culos a g&aacute;s, pois caso venha queimar a bomba do combust&iacute;vel o preju&iacute;zo ser&aacute; por parte do LOCAT&Aacute;RIO.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DO VALOR DO ALUGUEL</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 2&ordf;. </strong>Pela presente loca&ccedil;&atilde;o, obriga o LOCAT&Aacute;RIO a pagar o valor semanal de R$ 650,00 (seiscentos e cinquenta reais), sendo o primeiro pagamento no ato da assinatura do presente termo, e os demais com frequ&ecirc;ncia de 07 dias em cada pagamento at&eacute; o termino do contrato.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> O LOCAT&Aacute;RIO dever&aacute; efetuar o pagamento do valor acordado mediante dinheiro (esp&eacute;cie), PIX (TELEFONE): 48 98832-8626 ou dep&oacute;sito banc&aacute;rio na&nbsp;Conta Corrente n. 31294092-0, ag&ecirc;ncia n. 0001, Banco 336 C6 BANK, de titularidade de JPS Ve&iacute;culos, inscrito no CNPJ n&ordm; 43.354.322/0001-41, comprometendo-se o Locat&aacute;rio a encaminhar o respectivo comprovante de dep&oacute;sito por WhatsApp n&uacute;mero <strong><em>21 98788-</em></strong> <strong><em>6892</em></strong></p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> O LOCAT&Aacute;RIO poder&aacute; utilizar o ve&iacute;culo at&eacute; 10.000km (dez mil quil&ocirc;metros) por m&ecirc;s, o que ultrapassar condicionar&aacute; o LOCAT&Aacute;RIO ao pagamento de R$ 0,35 (trinta e cinco centavos) a cada KM ultrapassado, devendo ser pago a cada 1.000km (hum mil quil&ocirc;metros) rodados.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Terceiro:</span> Em caso de inadimplemento, ser&aacute; aplicada multa de 10% (dez por cento), bem como incidir&atilde;o juros de mora de 1% (um por cento) ao m&ecirc;s sob o valor devido e corre&ccedil;&atilde;o monet&aacute;ria, e ensejar&aacute; a sua cobran&ccedil;a atrav&eacute;s de advogado. Ficam desde j&aacute;, fixados os honor&aacute;rios advocat&iacute;cios em 10% (dez por cento), se amig&aacute;vel a cobran&ccedil;a, e de 20% (vinte por cento), se judicial.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Quarto:</span> O valor do aluguel firmado neste contrato ser&aacute; reajustado a cada 12 (doze) meses, tendo como base o &iacute;ndice IGP-M. E, em caso de falta desse &iacute;ndice, o reajuste se dar&aacute; com base na m&eacute;dia da varia&ccedil;&atilde;o dos &iacute;ndices inflacion&aacute;rios do ano corrente ao da execu&ccedil;&atilde;o da loca&ccedil;&atilde;o, ou ainda, caso ocorra altera&ccedil;&otilde;es que justifiquem o aumento do valor do aluguel.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Quinto:</span> Em caso de inadimplemento, incidir&atilde;o juros de mora de 1% (um por cento) ao m&ecirc;s sob o valor devido e corre&ccedil;&atilde;o monet&aacute;ria, e ensejar&aacute; a sua cobran&ccedil;a atrav&eacute;s de advogado. Ficam desde j&aacute;, fixados os honor&aacute;rios advocat&iacute;cios em 10% (dez por cento), se amig&aacute;vel a cobran&ccedil;a, e de 20% (vinte por cento), se judicial.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Sexto:</span> O LOCAT&Aacute;RIO n&atilde;o vindo a efetuar o pagamento do aluguel, a partir do primeiro dia de atraso, fica sujeito a ter a posse do ve&iacute;culo configurada como apropria&ccedil;&atilde;o ind&eacute;bita, concedendo a LOCADORA &agrave; retomada da posse do ve&iacute;culo imediatamente e a rescis&atilde;o do presente contrato sem a necessidade de aviso pr&eacute;vio incidindo em desfavor do LOCATARIO todas as multas e penalidades legais, conferindo tamb&eacute;m ao locador a possibilidade da a&ccedil;&atilde;o de todas as medidas judiciais cab&iacute;veis no intuito de reaver o ve&iacute;culo e cobrar os valores em abertos e eventuais ressarcimentos decorrentes de mau uso ou deprecia&ccedil;&atilde;o do ve&iacute;culo.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo S&eacute;timo:</span> O ve&iacute;culo objeto deste contrato, possui rastreador com possibilidade de bloqueio para locomo&ccedil;&atilde;o, podendo o LOCADOR, face o descumprimento do pagamento ou de qualquer cl&aacute;usula deste contrato utilizar o bloqueador do ve&iacute;culo impedindo em que, caso n&atilde;o seja poss&iacute;vel a retirada do ve&iacute;culo pelo LOCADOR.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Oitavo:</span> Ser&aacute; de responsabilidade do LOCAT&Aacute;RIO todas as despesas referentes &agrave; utiliza&ccedil;&atilde;o do ve&iacute;culo, desde que n&atilde;o seja causado por imprud&ecirc;ncia do LOCAT&Aacute;RIO direta e indiretamente, exemplo: batidas, amassados superficiais, super aquecimento por falta de aten&ccedil;&atilde;o, pneus rasgados, etc.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA GARANTIA</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 3&ordf;. </strong>O LOCAT&Aacute;RIO concorda desde j&aacute; em pagar, a t&iacute;tulo de fian&ccedil;a no caso de sinistro ou danos, a sinal cau&ccedil;&atilde;o no valor de R$ 1000,00 (hum mil reais), sendo pagos no ato da assinatura.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> A cau&ccedil;&atilde;o ser&aacute; devolvida caso entregue na retirada do ve&iacute;culo ao final do per&iacute;odo 30 dias ap&oacute;s termino da loca&ccedil;&atilde;o ao LOCAT&Aacute;RIO, salvo, em casos de danos identificados na vistoria ou multa por quebra de contrato, bem como a t&iacute;tulo de compensa&ccedil;&atilde;o de alugu&eacute;is.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> Em caso de n&atilde;o pagamento das obriga&ccedil;&otilde;es, nos termos definidos neste instrumento, poder&aacute; o LOCADOR realizar a execu&ccedil;&atilde;o do referido t&iacute;tulo de cr&eacute;dito, utilizando-se dos meios judiciais e extrajudiciais.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA</strong> <strong>LIMPEZA,</strong> <strong>CONSERVA&Ccedil;&Atilde;O, MANUTEN&Ccedil;&Atilde;O</strong> <strong>E</strong> <strong>BENFEITORIAS NECESS&Aacute;RIAS</strong></span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 4&ordf;. </strong>O ve&iacute;culo ser&aacute; entregue ao LOCAT&Aacute;RIO limpo e dever&aacute; ser devolvido ao LOCADOR nas mesmas condi&ccedil;&otilde;es em que foi retirado.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 5&ordf;. </strong>Sobre o LOCAT&Aacute;RIO recai a responsabilidade por zelar pela conserva&ccedil;&atilde;o, limpeza do bem, seguran&ccedil;a, efetuando as manuten&ccedil;&otilde;es necess&aacute;rias para sua conserva&ccedil;&atilde;o, sendo que os gastos e pagamentos decorrentes da mesma, correr&atilde;o por conta do LOCADOR.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 6&ordf;. </strong>O LOCAT&Aacute;RIO declara receber o bem em perfeito estado de conserva&ccedil;&atilde;o e perfeito funcionamento, devendo observar o que consta no termo de vistoria, devidamente assinado pelo LOCAT&Aacute;RIO.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> Caso o ve&iacute;culo seja devolvido sujo, seja interna ou externamente, ser&aacute; cobrada uma taxa de lavagem simples, especial ou higieniza&ccedil;&atilde;o, dependendo do estado do ve&iacute;culo na devolu&ccedil;&atilde;o da retirada do LOCADOR.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> Caso haja a necessidade de lavagem especial, ser&aacute; cobrada, al&eacute;m da taxa de lavagem, o valor m&iacute;nimo de 1 (uma) di&aacute;ria de loca&ccedil;&atilde;o, ou quantas di&aacute;rias forem necess&aacute;rias at&eacute; a disponibiliza&ccedil;&atilde;o do ve&iacute;culo para loca&ccedil;&atilde;o, limitado a 5 (cinco) di&aacute;rias do ve&iacute;culo com base na tarifa vigente.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DO PRAZO DO ALUGUEL</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 7&ordf;. </strong>O prazo de loca&ccedil;&atilde;o do referido ve&iacute;culo &eacute; de 60 (sessenta) dias, prorrogando-se automaticamente a partir do termo, se n&atilde;o houver manifesta&ccedil;&atilde;o em contr&aacute;rio.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo &Uacute;nico:</span> Se ap&oacute;s o fim da loca&ccedil;&atilde;o, caso a LOCADORA n&atilde;o queira prorrogar a loca&ccedil;&atilde;o, e o referido ve&iacute;culo n&atilde;o for devolvido, ser&aacute; cobrado o valor do aluguel proporcional aos dias de atraso, acumulado de multa di&aacute;ria de R$ 150,00 (cento e cinquenta reais).</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA UTILIZA&Ccedil;&Atilde;O</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 8&ordf;. </strong>O ve&iacute;culo dever&aacute; ser utilizado pelo LOCAT&Aacute;RIO exclusivamente da seguinte maneira: exclusivamente para transporte por aplicativo <strong>UBER, 99 e POP</strong>, <strong>EXCETO &ldquo;BLABLACAR&rdquo;, salvo acordo pr&eacute;vio entre as partes.</strong></p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> Qualquer modifica&ccedil;&atilde;o no ve&iacute;culo s&oacute; poder&aacute; ser feita com a autoriza&ccedil;&atilde;o expressa da LOCADORA.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> O locat&aacute;rio dever&aacute; obedecer a dist&acirc;ncia m&aacute;xima permitida do Munic&iacute;pio do presente contrato em um raio de 200 km, devendo o locat&aacute;rio solicitar autoriza&ccedil;&atilde;o expressa da locadora para deslocar-se a dist&acirc;ncia superior &agrave;quela pr&eacute;- determinada, sob pena de rescis&atilde;o contratual.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA VEDA&Ccedil;&Atilde;O &Agrave; SUBLOCA&Ccedil;&Atilde;O E EMPR&Eacute;STIMO DO VE&Iacute;CULO</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 9&ordf;. </strong>Ser&aacute; permitido o uso do ve&iacute;culo objeto do presente contrato, apenas pelo LOCAT&Aacute;RIO, sendo vedada, no todo ou em parte, a subloca&ccedil;&atilde;o, transfer&ecirc;ncia, empr&eacute;stimo, comodato ou cess&atilde;o da loca&ccedil;&atilde;o, seja a qualquer t&iacute;tulo, sem expressa anu&ecirc;ncia da LOCADORA, sob pena de imediata rescis&atilde;o.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DAS MULTAS E INFRA&Ccedil;&Otilde;ES DE TR&Acirc;NSITO</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 10&ordf;. </strong>O LOCAT&Aacute;RIO se obriga a pagar todas as multas e penalidades decorrentes de infra&ccedil;&otilde;es &agrave;s leis e regulamentos de tr&acirc;nsito, que ser&atilde;o de sua inteira e exclusiva responsabilidade, durante o per&iacute;odo em que estiver de posse do ve&iacute;culo.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> O LOCAT&Aacute;RIO declara-se ciente e concorda que se ocorrer qualquer multa ou infra&ccedil;&atilde;o de tr&acirc;nsito no per&iacute;odo em que o ve&iacute;culo estiver alugado, seu nome poder&aacute; ser indicado pela LOCADORA junto ao &Oacute;rg&atilde;o de Tr&acirc;nsito atuante, na qualidade de condutor do ve&iacute;culo.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> O LOCAT&Aacute;RIO dever&aacute; entregar &agrave; LOCADORA, c&oacute;pia da notifica&ccedil;&atilde;o/autua&ccedil;&atilde;o de tr&acirc;nsito, caso seja autuado por autoridade policial ou de tr&acirc;nsito, antes do vencimento do prazo para recurso.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 11&ordf;. </strong>Caso as multas sejam pagas pela LOCADORA, dever&atilde;o ser reembolsadas, devidamente corrigidas, mediante a apresenta&ccedil;&atilde;o dos comprovantes, sem renunciando o LOCAT&Aacute;RIO seu direito a recursos.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 12&ordf;. </strong>Multas lan&ccedil;adas ou comunicadas ap&oacute;s o termino do presente contrato relativas ao per&iacute;odo da loca&ccedil;&atilde;o dever&atilde;o ser pagas pelo LOCAT&Aacute;RIO, salvo se tais multas forem imput&aacute;veis &agrave; LOCADORA, por irregularidade na documenta&ccedil;&atilde;o do ve&iacute;culo.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> Em raz&atilde;o das multas porventura aplicadas pelos agentes e/ou policiais de tr&acirc;nsito em todo o territ&oacute;rio nacional ou internacional, durante o per&iacute;odo em que estiver de posse do ve&iacute;culo locado, a pontua&ccedil;&atilde;o na Carteira de habita&ccedil;&atilde;o e outras penalidades previstas na Lei n. 9.503/97 e regulamentos, s&atilde;o de responsabilidade &uacute;nica e exclusiva do LOCATARIO, obrigando-se este a transferir tais pontos de imediato.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> Em caso de apreens&atilde;o do ve&iacute;culo, ser&atilde;o cobradas do LOCAT&Aacute;RIO todas as despesas de servi&ccedil;o dos profissionais envolvidos para libera&ccedil;&atilde;o do ve&iacute;culo alugado, assim como todas as taxas cobradas pelos &oacute;rg&atilde;os competentes, e tamb&eacute;m quantas di&aacute;rias forem necess&aacute;rias at&eacute; a disponibiliza&ccedil;&atilde;o do ve&iacute;culo para loca&ccedil;&atilde;o.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Terceiro:</span> Cabe ao LOCAT&Aacute;RIO, no ato da assinatura do presente contrato, assinar tamb&eacute;m TERMO DE RESPONSABILIDADE, o qual consiste no instrumento apto a eximir a LOCADORA de quaisquer multas, acidentes ou ocorr&ecirc;ncias ocasionadas com o ve&iacute;culo objeto do presente ajuste, bem como se comprometendo a receber as pontua&ccedil;&otilde;es correspondentes em sua CNH (Carteira Nacional de Habilita&ccedil;&atilde;o).</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA MANUTEN&Ccedil;&Atilde;O</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 13&ordf;. </strong>Correr&atilde;o por conta da LOCADORA &agrave;s despesas de manuten&ccedil;&atilde;o preventiva e corretiva, excetuando-se combust&iacute;vel, troca de l&acirc;mpadas queimadas, consertos de acess&oacute;rios e pneum&aacute;ticos, vidros, lavagens, lubrifica&ccedil;&atilde;o e despesas decorrentes de colis&atilde;o e/ou as ocasionadas por mau uso ou utiliza&ccedil;&atilde;o inadequada do VE&Iacute;CULO.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> Se durante o per&iacute;odo da manuten&ccedil;&atilde;o, a LOCADORA n&atilde;o dispuser do bem ou outro de categoria igual ou similar, conceder&aacute; desconto na loca&ccedil;&atilde;o, proporcionalmente ao tempo da manuten&ccedil;&atilde;o.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> A manuten&ccedil;&atilde;o e troca das pe&ccedil;as decorrentes do mau uso do ve&iacute;culo, assim entendido como a sua utiliza&ccedil;&atilde;o em desacordo com as instru&ccedil;&otilde;es de uso, ser&atilde;o de responsabilidade do LOCAT&Aacute;RIO.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Terceiro:</span> Se durante o per&iacute;odo de loca&ccedil;&atilde;o o ve&iacute;culo apresentar defeito cujo conserto demore tempo superior a 3 (tr&ecirc;s) dias, o LOCAT&Aacute;RIO poder&aacute; optar pela rescis&atilde;o do contrato ou aguardar pelo prazo estipulado para a corre&ccedil;&atilde;o do defeito.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Quarto:</span> O LOCAT&Aacute;RIO dever&aacute; realizar a troca do &oacute;leo e filtros, devendo ser realizada a cada 9.000km (nove mil quil&ocirc;metros), caso n&atilde;o seja feito a manuten&ccedil;&atilde;o dentro do Km estipulado, ser&aacute; cobrado multa di&aacute;ria de R$ 50,00 (cinquenta reais).</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>AVARIAS E INDENIZA&Ccedil;&Otilde;ES</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 14&ordf;. </strong>Caso sejam constatadas avarias no ve&iacute;culo locado, no ato da sua devolu&ccedil;&atilde;o, ser&atilde;o cobrados do Locat&aacute;rio os valores das respectivas avarias.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo &Uacute;nico:</span> Caso o Locat&aacute;rio cause danos a terceiros, dever&aacute; ressarcir a integralmente ao LOCADOR ou ao terceiro de fora direta mediante comprovantes.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 15&ordf;. </strong>Ser&atilde;o cobradas em caso de perda, roubo ou furto, as despesas para a reposi&ccedil;&atilde;o das chaves e/ou documentos do ve&iacute;culo locado.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 16&ordf;. </strong>O LOCAT&Aacute;RIO dever&aacute; ressarcir as despesas com ve&iacute;culo apreendido, suportadas pelo LOCADOR caso o ve&iacute;culo locado seja apreendido em p&aacute;tios e dep&oacute;sitos de &oacute;rg&atilde;os de tr&acirc;nsito, incluindo di&aacute;rias e taxas dos referidos locais, assim como servi&ccedil;os profissionais de advogados e/ou despachantes para libera&ccedil;&atilde;o do ve&iacute;culo, c&oacute;pias autenticadas e reconhecimento de firmas, nos casos em que der causa o Locat&aacute;rio.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 17&ordf;. </strong>Dever&aacute; o LOCAT&Aacute;RIO indenizar a t&iacute;tulo de lucros cessantes, quando a LOCADORA deixar de auferir com o ve&iacute;culo locado, em raz&atilde;o de conduta do LOCAT&Aacute;RIO, inclusive furto, roubo, acidente, calculado &agrave; base do pre&ccedil;o da di&aacute;ria contratada. Tais valores ser&atilde;o cobrados caso n&atilde;o tenha sido contratada a respectiva prote&ccedil;&atilde;o ou em casos em que houver a perda desta prote&ccedil;&atilde;o.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA UTILIZA&Ccedil;&Atilde;O DO SEGURO</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 18&ordf;. </strong>Em caso de sinistro/colis&atilde;o, furto ou roubo, fica acertado que o LOCATARIO pagar&aacute; o valor da franquia do seguro/associa&ccedil;&atilde;o do ve&iacute;culo na data do</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">ocorrido a t&iacute;tulo de participa&ccedil;&atilde;o para compor o valor do dano do ve&iacute;culo locado, independentemente de quem for a culpa.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> Sendo a culpa da colis&atilde;o do terceiro, e este cobrirem integralmente o valor dos reparos, o LOCATARIO ficar&aacute; isento do pagamento do valor estabelecido a t&iacute;tulo de participa&ccedil;&atilde;o.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> Fica acordado e esclarecido entre as partes contratantes que o LOCATARIO responder&aacute; pessoalmente por danos causados a terceiros, quando o valor destes danos for superior aos cobertos pela prote&ccedil;&atilde;o mencionada no <em>caput</em>, seja por for&ccedil;a de ordem judicial ou extrajudicial.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Terceiro:</span> Responde o LOCATARIO, diretamente, pelos acidentes em que o ve&iacute;culo locado se envolver independentemente da culpa ou de quem estiver conduzindo o ve&iacute;culo, sendo no &acirc;mbito civil e criminal.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 19&ordf;. </strong>Em caso de acidente, furto, roubo ou inc&ecirc;ndio envolvendo o carro locado, deve o LOCAT&Aacute;RIO:</p>
+<ul style="text-align: justify;">
+<li>Comunicar imediatamente, o ocorrido &agrave; LOCADORA por meio</li>
+</ul>
+<p style="text-align: justify;">comprovadamente eficaz;</p>
+<ul style="text-align: justify;">
+<li>Providenciar, em caso de furto ou roubo do carro, no prazo m&aacute;ximo de 24 (vinte e quatro) horas a contar do evento, ou de que dele tenha conhecimento, o registro de ocorr&ecirc;ncia perante reparti&ccedil;&atilde;o policial competente, requerendo respectiva certid&atilde;o, que dever&aacute; ser entregue &agrave; LOCADORA para preval&ecirc;ncia da prote&ccedil;&atilde;o contratada;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Requerer, em caso de acidente de tr&acirc;nsito, a realiza&ccedil;&atilde;o de per&iacute;cia &ndash; Danos ou Pericia &ndash; Crime (est&aacute; existindo vitima), ao DETRAN ou autoridade policial competente. Inexistindo condi&ccedil;&otilde;es para a realiza&ccedil;&atilde;o da per&iacute;cia, torna-se obrigat&oacute;ria a emiss&atilde;o de boletim de ocorr&ecirc;ncia;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>No caso de inexist&ecirc;ncia de autoridade policial local, o LOCATARIO ficar&aacute; obrigado a fazer o registro da ocorr&ecirc;ncia na reparti&ccedil;&atilde;o policial mais pr&oacute;xima, obtendo respectiva certid&atilde;o, para imediata entrega &agrave; LOCADORA, sob pena de perda da prote&ccedil;&atilde;o contratada.</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Anotar, sempre que existentes, nomes, dados pessoais e endere&ccedil;os completos de testemunhas presenciais de acidentes envolvendo o carro alugado.</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DOS DEVERES DO LOCAT&Aacute;RIO</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 20&ordf;. </strong>S&atilde;o obriga&ccedil;&otilde;es do LOCAT&Aacute;RIO:</p>
+<ul style="text-align: justify;">
+<li>Pagar o aluguel e os encargos da loca&ccedil;&atilde;o, legal ou contratualmente exig&iacute;veis, no prazo estipulado sob pena de rescis&atilde;o contratual ap&oacute;s o primeiro dia de atraso;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Responsabilizar-se pela guarda e correto uso do ve&iacute;culo enquanto durar a loca&ccedil;&atilde;o;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Estar devidamente habilitado e autorizado, que dever&aacute; seguir expressamente as disposi&ccedil;&otilde;es do C&oacute;digo Nacional de Tr&acirc;nsito, sob pena de ter o presente contrato imediatamente rescindido, perdendo a validade a forma de prote&ccedil;&atilde;o contratada, e ainda vencendo-se antecipadamente a d&iacute;vida;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Responsabilizar-se pelo pagamento das multas decorrentes de infra&ccedil;&atilde;o de tr&acirc;nsito no per&iacute;odo em que o ve&iacute;culo esteve sob a sua responsabilidade.</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Arcar com despesas de combust&iacute;vel, troca de l&acirc;mpadas queimadas, conserto de avarias causadas pelo mesmo em toda dimens&atilde;o do ve&iacute;culo;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Manuten&ccedil;&atilde;o peri&oacute;dica do ve&iacute;culo locado, conforme manual de f&aacute;brica, tais como: Verificar o n&iacute;vel de &oacute;leo, n&iacute;vel de &aacute;gua dos reservat&oacute;rios, etc.;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Usar o ve&iacute;culo como foi convencionado, de acordo com a sua natureza e com o objetivo a que se destina. Cuidar e zelar do ve&iacute;culo como se fosse sua propriedade;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Restituir o ve&iacute;culo, no final da loca&ccedil;&atilde;o, no estado em que o recebeu, salvo as deteriora&ccedil;&otilde;es decorrentes do seu uso normal e com o tanque de combust&iacute;vel cheio, da mesma maneira que recebeu;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Levar imediatamente ao conhecimento da LOCADORA o surgimento de qualquer dano ou ocorr&ecirc;ncia cuja repara&ccedil;&atilde;o e ou indeniza&ccedil;&atilde;o a esta enquadre;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Reparar rapidamente os danos sob sua responsabilidade;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>N&atilde;o modificar a forma interna ou externa do ve&iacute;culo sem o consentimento pr&eacute;vio e por escrito da LOCADORA;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Vistoriar o ve&iacute;culo no ato de sua devolu&ccedil;&atilde;o vista restar, desde j&aacute;, certo e ajustado entre as partes que o Locat&aacute;rio o entregou desocupado de qualquer pertence ou valores, renunciando expressamente a qualquer reclama&ccedil;&atilde;o a respeito</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>OBRIGA&Ccedil;&Otilde;ES DO LOCADOR</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 21&ordf;. </strong>S&atilde;o obriga&ccedil;&otilde;es do LOCADOR:</p>
+<ul style="text-align: justify;">
+<li>Conceder ao Locat&aacute;rio a posse prec&aacute;ria do ve&iacute;culo durante o per&iacute;odo contratado, enquanto houver a adimpl&ecirc;ncia dos valores da loca&ccedil;&atilde;o ora contratada para o uso a que se destina;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Ser integralmente respons&aacute;vel pelos problemas, defeitos e v&iacute;cios anteriores &agrave; loca&ccedil;&atilde;o;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Arcar com pagamento das despesas com o ve&iacute;culo que locar por meio deste contrato tais como: impostos federais, estaduais e manuten&ccedil;&otilde;es preventivas;</li>
+</ul>
+<ul style="text-align: justify;">
+<li>Efetuar a manuten&ccedil;&atilde;o corretiva e preventiva do ve&iacute;culo, cabendo a essa o rod&iacute;zio de pneus.</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA RESCIS&Atilde;O</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 22&ordf;</strong>. Ap&oacute;s o prazo de 60 (sessenta) dias, as partes poder&atilde;o rescindir o contrato unilateralmente, sem apresenta&ccedil;&atilde;o de justificativa, mediante simples notifica&ccedil;&atilde;o escrita via WhatsApp ou e-mail, a ser realizada com anteced&ecirc;ncia m&iacute;nima de</p>
+<p style="text-align: justify;">7 (sete) dias.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 23&ordf;</strong>. Acaso o aviso n&atilde;o seja observado, o LOCAT&Aacute;RIO dever&aacute; efetuar o pagamento do correspondente a 07 (sete) di&aacute;rias. Todavia, se o prazo de 30 (trinta) dias n&atilde;o tiver transcorrido, o LOCAT&Aacute;RIO estar&aacute; obrigado ao pagamento de multa contratual no valor correspondente a 15 (quinze) di&aacute;rias, ou o prazo remanescente da loca&ccedil;&atilde;o, se passados 15 (quinze) dias.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo &Uacute;nico:</span> Em cumprimento ao princ&iacute;pio da boa-f&eacute;, as partes se comprometem a informar uma &agrave; outra qualquer fato que possa porventura intervir na rela&ccedil;&atilde;o jur&iacute;dica formalizada atrav&eacute;s do presente contrato.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 24&ordf;</strong>. O Contrato tamb&eacute;m ser&aacute; rescindido nos casos de descumprimento, por qualquer das partes, das obriga&ccedil;&otilde;es contratuais aqui assumidas, sem preju&iacute;zo da reclama&ccedil;&atilde;o de eventuais perdas e danos.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 25&ordf;</strong>. O Contrato poder&aacute; ser rescindido em caso de suspeita de atividades il&iacute;citas ou mesmo que esteja em desacordo com as pr&aacute;ticas do LOCADOR, podendo, inclusive, ocorrer a retoma do ve&iacute;culo locado, situa&ccedil;&atilde;o que n&atilde;o caber&aacute;, ao LOCAT&Aacute;RIO, qualquer pedido por eventuais perdas e danos.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DAS PENALIDADES</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 26&ordf;. </strong>Caso ocorra uma viola&ccedil;&atilde;o, este contrato poder&aacute; ser rescindido de pleno direito pela parte prejudicada, sem a necessidade de aviso pr&eacute;vio.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Primeiro:</span> Ocorrendo uma toler&acirc;ncia de uma das partes em rela&ccedil;&atilde;o ao descumprimento das cl&aacute;usulas contidas neste instrumento n&atilde;o se configura em ren&uacute;ncia ou altera&ccedil;&atilde;o da norma infringida.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo Segundo:</span> O LOCATARIO reconhece expressamente que a LOCADORA torna-se credora de d&iacute;vida liquida certa e exig&iacute;vel dos valores devidos a t&iacute;tulo de loca&ccedil;&atilde;o e demais valores que integram o presente contrato, como, por exemplo, multas de transito, avarias na dimens&atilde;o do ve&iacute;culo, quando n&atilde;o quitados pelo LOCATARIO.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DA OBSERV&Acirc;NCIA DA PROTE&Ccedil;&Atilde;O DE DADOS</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 27&ordf;. </strong>As PARTES se obrigam a atuar em conformidade com as normas vigentes sobre a Prote&ccedil;&atilde;o de Dados e demais Leis que asseguram a prote&ccedil;&atilde;o e compartilhamento de dados, seguindo as determina&ccedil;&otilde;es impostas pelos &oacute;rg&atilde;os reguladores e fiscalizadores sobre tal, especialmente sobre a Lei Geral de Prote&ccedil;&atilde;o de Dados (LGPD), sob pena de arcar com os preju&iacute;zos que eventualmente possam causar.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DISPOSI&Ccedil;&Otilde;ES GERAIS</strong></span></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 28&ordf;. </strong>Nos termos do art. 265 do C&oacute;digo Civil Brasileiro, inexistem solidariedade, seja contratual ou legal entre a Locadora e o Locat&aacute;rio, raz&atilde;o pela qual, com a loca&ccedil;&atilde;o e a efetiva retirada do ve&iacute;culo alugado, o Locat&aacute;rio assume sua posse aut&ocirc;noma para todos os fins de direito, responsabilizando-se por eventuais indeniza&ccedil;&otilde;es decorrentes do uso e circula&ccedil;&atilde;o do ve&iacute;culo, cuja responsabilidade perdurar&aacute; at&eacute; a efetiva devolu&ccedil;&atilde;o do ve&iacute;culo alugado.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 29&ordf;. </strong>Concorda o LOCAT&Aacute;RIO que a Locadora promova, pelos meios processuais de que venha a dispor. O seu chamamento aos feitos judiciais promovidos por terceiros decorrentes de eventos com o ve&iacute;culo alugado, cabendo-lhe assumir o p&oacute;lo passivo nas demandas, inclusive quanto aos valores que excedam as coberturas previstas para assun&ccedil;&atilde;o de responsabilidades financeiras e/ou para assegurar os direitos regressivos da Locadora.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;">Par&aacute;grafo &Uacute;nico:</span> O Locat&aacute;rio ser&aacute; respons&aacute;vel pelo pagamento de lucros cessantes que terceiros possam pleitear judicialmente em raz&atilde;o de sua conduta il&iacute;cita;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 30&ordf;. </strong>O Locat&aacute;rio deve abster-se, terminantemente, de conduzir/utilizar o ve&iacute;culo alugado sob efeito de &aacute;lcool, narc&oacute;ticos, entorpecentes ou medicamentos que possam afetar a capacidade de condu&ccedil;&atilde;o do ve&iacute;culo, sob pena de rescis&atilde;o imediata do contrato.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 31&ordf;. </strong>&Eacute; de responsabilidade exclusiva do Locat&aacute;rio o transporte de quaisquer passageiros que vier a transportar, bem como a utiliza&ccedil;&atilde;o dos equipamentos de seguran&ccedil;a pertinentes a cada faixa et&aacute;ria.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 32&ordf;. </strong>O presente contrato obriga o Locat&aacute;rio e seus herdeiros e sucessores ao integral cumprimento.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 33&ordf;. </strong>A Locadora n&atilde;o se responsabiliza por valores e objetos deixados no ve&iacute;culo alugado e nas suas depend&ecirc;ncias. Da mesma forma, a Locadora tamb&eacute;m n&atilde;o se responsabiliza pelos acess&oacute;rios e equipamentos que tenham sido instalados no ve&iacute;culo locado sem a sua pr&eacute;via autoriza&ccedil;&atilde;o expressa e por escrito, os quais passam a incorporar o ve&iacute;culo e n&atilde;o ser&atilde;o pass&iacute;veis de reembolso e indeniza&ccedil;&atilde;o.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 34&ordf;. </strong>Todos os valores, despesas e encargos da loca&ccedil;&atilde;o constituem d&iacute;vidas l&iacute;quidas e certas para pagamento &agrave; vista, pass&iacute;veis de cobran&ccedil;a judicial.</p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 35&ordf;. </strong>Eventuais toler&acirc;ncias da Locadora para com o Locat&aacute;rio no cumprimento das obriga&ccedil;&otilde;es ajustadas neste Contrato constituem mera liberalidade, n&atilde;o configurando em hip&oacute;tese alguma qualquer nova&ccedil;&atilde;o, permanecendo &iacute;ntegras as cl&aacute;usulas e condi&ccedil;&otilde;es aqui contratadas.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><strong>DO FORO</strong></p>
+<p style="text-align: justify;"><strong>CL&Aacute;USULA 36&ordf;. </strong>Fica desde j&aacute; eleito o foro da comarca de Florian&oacute;polis/SC, para serem resolvidas quaisquer pend&ecirc;ncias decorrentes deste contrato, com a ren&uacute;ncia expressa de qualquer outro foro por mais privilegiado que seja. E, por estarem assim certos e ajustados, firmam os signat&aacute;rios este instrumento em 02 (duas) vias de igual teor e forma, e para &uacute;nico fim de Direito.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>
 
 
-        As partes acima identificadas têm ente si, justo e acertado o presente Contrato de Locação de Veículo por Prazo Determinado, que se regerá pelas cláusulas seguintes e pelas condições descritas no presente.<br><br>
-
-        <b>DO OBJETO DO CONTRATO</b><br>
-        <b>CLÁUSULA 1ª</b>. O presente contrato tem como OBJETO a locação do veículo: <b>{{$locacao->Veiculo->modelo}} - {{$locacao->Veiculo->modelo}}</b> cor <b>{{$locacao->Veiculo->cor}}</b>, combustível álcool/gasolina\gás natural com placas <b>{{$locacao->Veiculo->placa}}.</b><br>
-        <u>Parágrafo Primeiro:</u> O veículo, como dito, é de propriedade ou sob administração do LOCADOR e entregue com todos os equipamentos exigidos pelo Código de Trânsito Brasileiro e em perfeitas condições de uso e segurança, conforme checklist anexo, devidamente assinado pelo LOCATÁRIO.<br>
-
-        <u>Parágrafo Segundo:</u> No veículo objeto do presente contrato haverá publicidade da empresa locadora.<br>
-        <u>Parágrafo terceiro:</u> É de obrigatoriedade do locatário sempre manter o nível do combustível com pelo menos ¼ do tanque, principalmente em veículos a gás, pois caso venha queimar a bomba do combustível o prejuízo será por parte do LOCATÁRIO.<br><br>
-
-        <b>DO VALOR DO ALUGUEL</b><br>
-        <b>CLÁUSULA 2ª</b>. Pela presente locação, obriga o LOCATÁRIO a pagar o valor semanal descrito na observações da ficha de locação anexa a este contrato, sendo o primeiro pagamento no ato da assinatura do presente termo, e os demais com frequência de 07 dias em cada pagamento até o termino do contrato.<br>
-       <u>Parágrafo Primeiro:</u> O LOCATÁRIO deverá efetuar o pagamento do valor acordado mediante dinheiro (espécie), PIX (TELEFONE): 48 98832-8626 ou depósito bancário na Conta Corrente n. 31294092-0, agência n. 0001, Banco 336 C6 BANK, de titularidade de JPS Veículos, inscrito no CNPJ nº 43.354.322/0001-41, comprometendo-se o Locatário a encaminhar o respectivo comprovante de depósito por WhatsApp número 21 98788-6892<br>
-       <u>Parágrafo Segundo:</u> O LOCATÁRIO poderá utilizar o veículo até 8.000km (oito mil quilômetros) por mês, o que ultrapassar condicionará o LOCATÁRIO ao pagamento de R$ 0,35 (trinta e cinco centavos) a cada KM ultrapassado, devendo ser pago a cada 1.000km (hum mil quilômetros) rodados.<br>
-       <u>Parágrafo Terceiro:</u> Em caso de inadimplemento, será aplicada multa de 10% (dez por cento), bem como incidirão juros de mora de 1% (um por cento) ao mês sob o valor devido e correção monetária, e ensejará a sua cobrança através de advogado. Ficam desde já, fixados os honorários advocatícios em 10% (dez por cento), se amigável a cobrança, e de 20% (vinte por cento), se judicial.<br>
-       <u>Parágrafo Quarto:</u> O valor do aluguel firmado neste contrato será reajustado a cada 12 (doze) meses, tendo como base o índice IGP-M. E, em caso de falta desse índice, o reajuste se dará com base na média da variação dos índices inflacionários do ano corrente ao da execução da locação, ou ainda, caso ocorra alterações que justifiquem o aumento do valor do aluguel.
-       <u>Parágrafo Quinto:</u> Em caso de inadimplemento, incidirão juros de mora de 1% (um por cento) ao mês sob o valor devido e correção monetária, e ensejará a sua cobrança através de advogado. Ficam desde já, fixados os honorários advocatícios em 10% (dez por cento), se amigável a cobrança, e de 20% (vinte por cento), se judicial.<br>
-       <u>Parágrafo Sexto:</u> O LOCATÁRIO não vindo a efetuar o pagamento do aluguel, a partir do primeiro dia de atraso, fica sujeito a ter a posse do veículo configurada como apropriação indébita, concedendo a LOCADORA à retomada da posse do veículo imediatamente e a rescisão do presente contrato sem a necessidade de aviso prévio incidindo em desfavor do LOCATARIO todas as multas e penalidades legais, conferindo também ao locador a possibilidade da ação de todas as medidas judiciais cabíveis no intuito de reaver o veículo e cobrar os valores em abertos e eventuais ressarcimentos decorrentes de mau uso ou depreciação do veículo.<br>
-       <u> Parágrafo Sétimo:</u> O veículo objeto deste contrato, possui rastreador com possibilidade de bloqueio para locomoção, podendo o LOCADOR, face o descumprimento do pagamento ou de qualquer cláusula deste contrato utilizar o bloqueador do veículo impedindo em que, caso não seja possível a retirada do veículo pelo LOCADOR.<br>
-       <u> Parágrafo Oitavo:</u> Será de responsabilidade do LOCATÁRIO todas as despesas referentes à utilização do veículo, desde que não seja causado por imprudência do LOCATÁRIO direta e indiretamente, exemplo: batidas, amassados superficiais, super aquecimento por falta de atenção, pneus rasgados, etc.<br><br>
-
-        <b>DA GARANTIA</b><br>
-        <b>CLÁUSULA 3ª</b>. O LOCATÁRIO concorda desde já em pagar, a título de fiança no caso de sinistro ou danos, a sinal caução no valor de R$ 1000,00 (hum mil reais). Sendo pago de acordo com as observações da ficha de locação.<br>
-
-        <u>Parágrafo Primeiro:</u> A caução será devolvida caso entregue na retirada do veículo ao final do período 30 dias após termino da locação ao LOCATÁRIO, salvo, em casos de danos identificados na vistoria ou multa por quebra de contrato, bem como a título de compensação de aluguéis.<br>
-        <u>Parágrafo Segundo:</u> Em caso de não pagamento das obrigações, nos termos definidos neste instrumento, poderá o LOCADOR realizar a execução do referido título de crédito, utilizando-se dos meios judiciais e extrajudiciais.<br><br>
-
-        <b>DA 	LIMPEZA, 	CONSERVAÇÃO, 	MANUTENÇÃO 	E 	BENFEITORIAS NECESSÁRIAS</b><br>
-
-        <b>CLÁUSULA 4ª</b>. O veículo será entregue ao LOCATÁRIO limpo e deverá ser devolvido ao LOCADOR nas mesmas condições em que foi retirado.<br>
-        <b>CLÁUSULA 5ª</b>. Sobre o LOCATÁRIO recai a responsabilidade por zelar pela conservação, limpeza do bem, segurança, efetuando as manutenções necessárias para sua conservação, sendo que os gastos e pagamentos decorrentes da mesma, correrão por conta do LOCADOR.<br>
-        <b>CLÁUSULA 6ª</b>. O LOCATÁRIO declara receber o bem em perfeito estado de conservação e perfeito funcionamento, devendo observar o que consta no termo de vistoria, devidamente assinado pelo LOCATÁRIO.<br>
-        <u>Parágrafo Primeiro:</u> Caso o veículo seja devolvido sujo, seja interna ou externamente, será cobrada uma taxa de lavagem simples, especial ou higienização, dependendo do estado do veículo na devolução da retirada do LOCADOR.<br>
-        <u>Parágrafo Segundo:</u> Caso haja a necessidade de lavagem especial, será cobrada, além da taxa de lavagem, o valor mínimo de 1 (uma) diária de locação, ou quantas diárias forem necessárias até a disponibilização do veículo para locação, limitado a 5 (cinco) diárias do veículo com base na tarifa vigente.<br><br>
-        <b>PRAZO DO ALUGUEL</b><br>
-        <b>CLÁUSULA 7ª</b>. O prazo de locação do referido veículo é de 60 (sessenta) dias, prorrogando-se automaticamente a partir do termo, se não houver manifestação em contrário.<br>
-        <u>Parágrafo Único:</u> Se após o fim da locação, caso a LOCADORA não queira prorrogar a locação, e o referido veículo não for devolvido, será cobrado o valor do aluguel proporcional aos dias de atraso, acumulado de multa diária de R$ 150,00 (cento e cinquenta reais).<br><br>
-        <b>DA UTILIZAÇÃO</b><br>
-        <b>CLÁUSULA 8ª</b>. O veículo deverá ser utilizado pelo LOCATÁRIO exclusivamente da seguinte maneira: exclusivamente para transporte por aplicativo UBER, 99 e POP, EXCETO “BLABLACAR”.<br>
-        <u>Parágrafo Primeiro:</u> Qualquer modificação no veículo só poderá ser feita com a autorização expressa da LOCADORA.<br>
-        <u>Parágrafo Segundo:</u> O locatário deverá obedecer a distância máxima permitida do Município do presente contrato em um raio de 200 km, devendo o locatário solicitar autorização expressa da locadora para deslocar-se a distância superior àquela pré-determinada, sob pena de rescisão contratual.<br><br>
-        <b>DA VEDAÇÃO À SUBLOCAÇÃO E EMPRÉSTIMO DO VEÍCULO</b><br>
-        <b>CLÁUSULA 9ª</b>. Será permitido o uso do veículo objeto do presente contrato, apenas pelo LOCATÁRIO, sendo vedada, no todo ou em parte, a sublocação, transferência, empréstimo, comodato ou cessão da locação, seja a qualquer título, sem expressa anuência da LOCADORA, sob pena de imediata rescisão.<br><br>
-        <b>DAS MULTAS E INFRAÇÕES DE TRÂNSITO</b><br>
-        <b>CLÁUSULA 10ª</b>. O LOCATÁRIO se obriga a pagar todas as multas e penalidades decorrentes de infrações às leis e regulamentos de trânsito, que serão de sua inteira e exclusiva responsabilidade, durante o período em que estiver de posse do veículo.<br>
-        <u>Parágrafo Primeiro:</u> O LOCATÁRIO declara-se ciente e concorda que se ocorrer qualquer multa ou infração de trânsito no período em que o veículo estiver alugado, seu nome poderá ser indicado pela LOCADORA junto ao Órgão de Trânsito atuante, na qualidade de condutor do veículo.<br>
-        <u>Parágrafo Segundo:</u> O LOCATÁRIO deverá entregar à LOCADORA, cópia da notificação/autuação de trânsito, caso seja autuado por autoridade policial ou de trânsito, antes do vencimento do prazo para recurso.<br>
-        <b>CLÁUSULA 11ª</b>. Caso as multas sejam pagas pela LOCADORA, deverão ser reembolsadas, devidamente corrigidas, mediante a apresentação dos comprovantes, sem renunciando o LOCATÁRIO seu direito a recursos.<br>
-        <b>CLÁUSULA 12ª</b>. Multas lançadas ou comunicadas após o termino do presente contrato relativas ao período da locação deverão ser pagas pelo LOCATÁRIO, salvo se tais multas forem imputáveis à LOCADORA, por irregularidade na documentação do veículo.<br>
-        <u>Parágrafo Primeiro:</u> Em razão das multas porventura aplicadas pelos agentes e/ou policiais de trânsito em todo o território nacional ou internacional, durante o período em que estiver de posse do veículo locado, a pontuação na Carteira de habitação e outras penalidades previstas na Lei n. 9.503/97 e regulamentos, são de responsabilidade única e exclusiva do LOCATARIO, obrigando-se este a transferir tais pontos de imediato. Parágrafo Segundo: Em caso de apreensão do veículo, serão cobradas do LOCATÁRIO todas as despesas de serviço dos profissionais envolvidos para liberação do veículo alugado, assim como todas as taxas cobradas pelos órgãos competentes, e também quantas diárias forem necessárias até a disponibilização do veículo para locação.<br>
-        <u>Págrafo Terceiro:</u> Cabe ao LOCATÁRIO, no ato da assinatura do presente contrato, assinar também TERMO DE RESPONSABILIDADE, o qual consiste no instrumento apto a eximir a LOCADORA de quaisquer multas, acidentes ou ocorrências ocasionadas com o veículo objeto do presente ajuste, bem como se comprometendo a receber as pontuações correspondentes em sua CNH (Carteira Nacional de Habilitação).<br><br>
-        <b>DA MANUTENÇÃO</b><br>
-        <b>CLÁUSULA 13ª</b>. Correrão por conta da LOCADORA às despesas de manutenção preventiva e corretiva, excetuando-se combustível, consertos de acessórios e pneumáticos, vidros, lavagens, lubrificação e despesas decorrentes de colisão e/ou as ocasionadas por mau uso ou utilização inadequada do VEÍCULO.<br>
-        <u>Parágrafo Primeiro:</u> Se durante o período da manutenção, a LOCADORA não dispuser do bem ou outro de categoria igual ou similar, concederá desconto na locação, proporcionalmente ao tempo da manutenção.<br>
-        <u>Parágrafo Segundo:</u> A manutenção e troca das peças decorrentes do mau uso do veículo, assim entendido como a sua utilização em desacordo com as instruções de uso, serão de responsabilidade do LOCATÁRIO.<br>
-        <u>Parágrafo Terceiro:</u> Se durante o período de locação o veículo apresentar defeito cujo conserto demore tempo superior a 3 (três) dias, o LOCATÁRIO poderá optar pela rescisão do contrato ou aguardar pelo prazo estipulado para a correção do defeito.<br>
-        <u>Parágrafo Quarto:</u> O LOCATÁRIO deverá realizar a troca do óleo e filtros, devendo ser realizada a cada 9.000km (nove mil quilômetros), caso não seja feito a manutenção dentro do Km estipulado, será cobrado multa diária de R$ 50,00 (cinquenta reais).<br><br>
-        <b>AVARIAS E INDENIZAÇÕES</b><br>
-        <b>CLÁUSULA 14ª</b>. Caso sejam constatadas avarias no veículo locado, no ato da sua devolução, serão cobrados do Locatário os valores das respectivas avarias.<br>
-        Parágrafo Único: Caso o Locatário cause danos a terceiros, deverá ressarcir a integralmente ao LOCADOR ou ao terceiro de fora direta mediante comprovantes.<br>
-        <b>CLÁUSULA 15ª.</b> Serão cobradas em caso de perda, roubo ou furto, as despesas para a reposição das chaves e/ou documentos do veículo locado.<br>
-        <b>CLÁUSULA 16ª.</b> O LOCATÁRIO deverá ressarcir as despesas com veículo apreendido, suportadas pelo LOCADOR caso o veículo locado seja apreendido em pátios e depósitos de órgãos de trânsito, incluindo diárias e taxas dos referidos locais, assim como serviços profissionais de advogados e/ou despachantes para liberação do veículo, cópias autenticadas e reconhecimento de firmas, nos casos em que der causa o Locatário.<br>
-        <b>CLÁUSULA 17ª.</b> Deverá o LOCATÁRIO indenizar a título de lucros cessantes, quando a LOCADORA deixar de auferir com o veículo locado, em razão de conduta do LOCATÁRIO, inclusive furto, roubo, acidente, calculado à base do preço da diária contratada. Tais valores serão cobrados caso não tenha sido contratada a respectiva proteção ou em casos em que houver a perda desta proteção.<br><br>
-        <b>DA UTILIZAÇÃO DO SEGURO</b><br>
-        <b>CLÁUSULA 18ª.</b> Em caso de sinistro/colisão, furto ou roubo, fica acertado que o LOCATARIO pagará o valor da franquia do seguro/associação do veículo na data do ocorrido a título de participação para compor o valor do dano do veículo locado, independentemente de quem for a culpa.<br>
-        <u>Parágrafo Primeiro:</u> Sendo a culpa da colisão do terceiro, e este cobrirem integralmente o valor dos reparos, o LOCATARIO ficará isento do pagamento do valor estabelecido a título de participação.<br>
-        <u>Parágrafo Segundo:</u> Fica acordado e esclarecido entre as partes contratantes que o LOCATARIO responderá pessoalmente por danos causados a terceiros, quando o valor destes danos for superior aos cobertos pela proteção mencionada no caput, seja por força de ordem judicial ou extrajudicial.<br>
-        <u>Parágrafo Terceiro:</u> Responde o LOCATARIO, diretamente, pelos acidentes em que o veículo locado se envolver independentemente da culpa ou de quem estiver conduzindo o veículo, sendo no âmbito civil e criminal.<br>
-        <b>CLÁUSULA 19ª.</b> Em caso de acidente, furto, roubo ou incêndio envolvendo o carro locado, deve o LOCATÁRIO:<br>
-        •	Comunicar 	imediatamente, 	o 	ocorrido 	à 	LOCADORA 	por 	meio  comprovadamente eficaz;<br>
-        •	Providenciar, em caso de furto ou roubo do carro, no prazo máximo de 24 (vinte e quatro) horas a contar do evento, ou de que dele tenha conhecimento, o registro de ocorrência perante repartição policial competente, requerendo respectiva certidão, que deverá ser entregue à LOCADORA para prevalência da proteção contratada;<br>
-        •	Requerer, em caso de acidente de trânsito, a realização de perícia – Danos ou
-        Pericia – Crime (está existindo vitima), ao DETRAN ou autoridade policial competente. Inexistindo condições para a realização da perícia, torna-se obrigatória a emissão de boletim de ocorrência;<br>
-        •	No caso de inexistência de autoridade policial local, o LOCATARIO ficará obrigado a fazer o registro da ocorrência na repartição policial mais próxima, obtendo respectiva certidão, para imediata entrega à LOCADORA, sob pena de perda da proteção contratada.<br>
-        •	Anotar, sempre que existentes, nomes, dados pessoais e endereços completos de testemunhas presenciais de acidentes envolvendo o carro alugado.<br><br>
-        <b>DOS DEVERES DO LOCATÁRIO</b><br>
-        <b>CLÁUSULA 20ª</b>.  São obrigações do LOCATÁRIO:<br>
-        •	Pagar o aluguel e os encargos da locação, legal ou contratualmente exigíveis, no prazo estipulado sob pena de rescisão contratual após o primeiro dia de
-        atraso;<br>
-        •	Responsabilizar-se pela guarda e correto uso do veículo enquanto durar a locação;<br>
-        •	Estar devidamente habilitado e autorizado, que deverá seguir expressamente as disposições do Código Nacional de Trânsito, sob pena de ter o presente contrato imediatamente rescindido, perdendo a validade a forma de proteção contratada, e ainda vencendo-se antecipadamente a dívida;<br>
-        •	Responsabilizar-se pelo pagamento das multas decorrentes de infração de trânsito no período em que o veículo esteve sob a sua responsabilidade.<br>
-        •	Arcar com despesas de combustível, troca do óleo do motor, conserto de avarias causadas pelo mesmo em toda dimensão do veículo;<br>
-        •	Manutenção periódica do veículo locado, conforme manual de fábrica, tais como: Verificar o nível de óleo, nível de água dos reservatórios, etc.;<br>
-        •	Usar o veículo como foi convencionado, de acordo com a sua natureza e com o objetivo a que se destina. Cuidar e zelar do veículo como se fosse sua
-        propriedade;<br>
-        •	Restituir o veículo, no final da locação, no estado em que o recebeu, salvo as deteriorações decorrentes do seu uso normal e com o tanque de combustível cheio, da mesma maneira que recebeu;<br>
-        •	Levar imediatamente ao conhecimento da LOCADORA o surgimento de qualquer dano ou ocorrência cuja reparação e ou indenização a esta enquadre;<br>
-        •	Reparar rapidamente os danos sob sua responsabilidade;<br>
-        •	Não modificar a forma interna ou externa do veículo sem o consentimento prévio e por escrito da LOCADORA;<br>
-        •	Vistoriar o veículo no ato de sua devolução vista restar, desde já, certo e ajustado entre as partes que o Locatário o entregou desocupado de qualquer pertence ou valores, renunciando expressamente a qualquer reclamação a
-        respeito<br><br>
-        <b>OBRIGAÇÕES DO LOCADOR</b><br>
-        <b>CLÁUSULA 21ª</b>.  São obrigações do LOCADOR:<br>
-        •	Conceder ao Locatário a posse precária do veículo durante o período contratado, enquanto houver a adimplência dos valores da locação ora contratada para o uso a que se destina;<br>
-        •	Ser integralmente responsável pelos problemas, defeitos e vícios anteriores à locação;<br>
-        •	Arcar com pagamento das despesas com o veículo que locar por meio deste contrato tais como: impostos federais, estaduais e manutenções preventivas;<br>
-        •	Efetuar a manutenção corretiva e preventiva do veículo, cabendo a essa o rodízio de pneus.<br><br>
-        <b>DA RESCISÃO</b><br>
-        <b>CLÁUSULA 22ª.</b> Após o prazo de 60 (sessenta) dias, as partes poderão rescindir o contrato unilateralmente, sem apresentação de justificativa, mediante simples notificação escrita via WhatsApp ou e-mail, a ser realizada com antecedência mínima de
-        7 (sete) dias.<br>
-        <b>CLÁUSULA 23ª</b>. Acaso o aviso não seja observado, o LOCATÁRIO deverá efetuar o pagamento do correspondente a 07 (sete) diárias. Todavia, se o prazo de 30 (trinta) dias não tiver transcorrido, o LOCATÁRIO estará obrigado ao pagamento de multa
-        contratual no valor correspondente a 15 (quinze) diárias, ou o prazo remanescente da locação, se passados 15 (quinze) dias.<br>
-        Parágrafo Único: Em cumprimento ao princípio da boa-fé, as partes se comprometem a informar uma à outra qualquer fato que possa porventura intervir na relação jurídica formalizada através do presente contrato.<br>
-        CLÁUSULA 24ª. O Contrato também será rescindido nos casos de descumprimento, por qualquer das partes, das obrigações contratuais aqui assumidas, sem prejuízo da reclamação de eventuais perdas e danos.<br>
-        CLÁUSULA 25ª. O Contrato poderá ser rescindido em caso de suspeita de atividades ilícitas ou mesmo que esteja em desacordo com as práticas do LOCADOR, podendo, inclusive, ocorrer a retoma do veículo locado, situação que não caberá, ao LOCATÁRIO, qualquer pedido por eventuais perdas e danos.<br><br>
-        <b>DAS PENALIDADES</b><br>
-        <b>CLÁUSULA 26ª</b>. Caso ocorra uma violação, este contrato poderá ser rescindido de pleno direito pela parte prejudicada, sem a necessidade de aviso prévio.<br>
-        <u>Parágrafo Primeiro:</u> Ocorrendo uma tolerância de uma das partes em relação ao descumprimento das cláusulas contidas neste instrumento não se configura em renúncia ou alteração da norma infringida.<br>
-        <u>Parágrafo Segundo:</u> O LOCATARIO reconhece expressamente que a LOCADORA torna-se credora de dívida liquida certa e exigível dos valores devidos a título de locação e demais valores que integram o presente contrato, como, por exemplo, multas de transito, avarias na dimensão do veículo, quando não quitados pelo LOCATARIO.<br><br>
-        <b>DA OBSERVÂNCIA DA PROTEÇÃO DE DADOS</b><br>
-        <b>CLÁUSULA 27ª</b>. As PARTES se obrigam a atuar em conformidade com as normas vigentes sobre a Proteção de Dados e demais Leis que asseguram a proteção e compartilhamento de dados, seguindo as determinações impostas pelos órgãos
-        reguladores e fiscalizadores sobre tal, especialmente sobre a Lei Geral de Proteção de Dados (LGPD), sob pena de arcar com os prejuízos que eventualmente possam causar.<br><br>
-        <b>DISPOSIÇÕES GERAIS</b><br>
-        <b>CLÁUSULA 28ª</b>. Nos termos do art. 265 do Código Civil Brasileiro, inexistem solidariedade, seja contratual ou legal entre a Locadora e o Locatário, razão pela qual, com a locação e a efetiva retirada do veículo alugado, o Locatário assume sua posse autônoma para todos os fins de direito, responsabilizando-se por eventuais indenizações decorrentes do uso e circulação do veículo, cuja responsabilidade perdurará até a efetiva devolução do veículo alugado.<br>
-        <b>CLÁUSULA 29ª</b>. Concorda o LOCATÁRIO que a Locadora promova, pelos meios processuais de que venha a dispor. O seu chamamento aos feitos judiciais promovidos por terceiros decorrentes de eventos com o veículo alugado, cabendo-lhe assumir o pólo passivo nas demandas, inclusive quanto aos valores que excedam as coberturas previstas para assunção de responsabilidades financeiras e/ou para assegurar os direitos regressivos da Locadora.<br>
-        <u>Parágrafo Único:</u> O Locatário será responsável pelo pagamento de lucros cessantes que terceiros possam pleitear judicialmente em razão de sua conduta ilícita;<br>
-        <b>CLÁUSULA 30ª</b>. O Locatário deve abster-se, terminantemente, de conduzir/utilizar o veículo alugado sob efeito de álcool, narcóticos, entorpecentes ou medicamentos que possam afetar a capacidade de condução do veículo, sob pena de rescisão imediata do contrato.<br>
-        <b>CLÁUSULA 31ª.</b> É de responsabilidade exclusiva do Locatário o transporte de quaisquer passageiros que vier a transportar, bem como a utilização dos equipamentos de segurança pertinentes a cada faixa etária.<br>
-        <b>CLÁUSULA 32ª.</b> O presente contrato obriga o Locatário e seus herdeiros e sucessores ao integral cumprimento.<br>
-        <b>CLÁUSULA 33ª.</b> A Locadora não se responsabiliza por valores e objetos deixados no veículo alugado e nas suas dependências. Da mesma forma, a Locadora também não se responsabiliza pelos acessórios e equipamentos que tenham sido instalados no veículo locado sem a sua prévia autorização expressa e por escrito, os quais passam a incorporar o veículo e não serão passíveis de reembolso e indenização.<br>
-        <b>CLÁUSULA 34ª.</b> Todos os valores, despesas e encargos da locação constituem dívidas líquidas e certas para pagamento à vista, passíveis de cobrança judicial.<br>
-        <b>ClÁUSULA 35ª.</b> Eventuais tolerâncias da Locadora para com o Locatário no cumprimento das obrigações ajustadas neste Contrato constituem mera liberalidade, não configurando em hipótese alguma qualquer novação, permanecendo íntegras as cláusulas e condições aqui contratadas.<br><br>
-        <b>DO FORO</b><br>
-        <b>CLÁUSULA 36ª.</b> Fica desde já eleito o foro da comarca de Florianópolis/SC, para serem resolvidas quaisquer pendências decorrentes deste contrato, com a renúncia expressa de qualquer outro foro por mais privilegiado que seja. E, por estarem assim certos e ajustados, firmam os signatários este instrumento em 02 (duas) vias de igual teor e forma, e para único fim de Direito.<br>
-
-
-
-
-</p>
 </div>
 
         <div style="text-align: center; font-size: 12"> Florianópolis, {{ $dataAtual->isoFormat('DD MMMM YYYY') }}<br><br><br>
