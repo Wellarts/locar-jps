@@ -313,7 +313,7 @@
 <p>&nbsp;</p>
 <p style="text-align: justify;"><strong>LOCADOR(A): JPS VE&Iacute;CULOS LTDA</strong>, empresa de direito privado inscrita no CNPJ sob N&ordm; 43.354.322/0001-41, com sede em Rua Benjamin Gerlach, 584 &ndash; Fazenda Santo Ant&ocirc;nio &ndash; S&atilde;o Jos&eacute;/SC.&nbsp;</p>
 <p style="text-align: justify;">&nbsp;</p>
-<p style="text-align: justify;"><strong>LOCAT&Aacute;RIO(A): {{$locacao->Cliente->nome}}, motorista de aplicativo, inscrita no CPF {{$locacao->Cliente->cpf}}, portador do RG {{$locacao->Cliente->rg}} - {{$locacao->Cliente->exp_rg}}, CNH {{$locacao->Cliente->cnh}}, residente e domiciliado {{$locacao->Cliente->endereco}} - {{$locacao->Cliente->Cidade->nome}} - {{$locacao->Cliente->Estado->uf}}</strong></p>
+<p style="text-align: justify;"><strong>LOCAT&Aacute;RIO(A): {{$locacao->Cliente->nome}}, motorista de aplicativo, inscrita no CPF {{$cpfCnpj}}, portador do RG {{$locacao->Cliente->rg}} - {{$locacao->Cliente->exp_rg}}, CNH {{$locacao->Cliente->cnh}}, residente e domiciliado {{$locacao->Cliente->endereco}} - {{$locacao->Cliente->Cidade->nome}} - {{$locacao->Cliente->Estado->uf}}</strong></p>
 <p style="text-align: justify;">As partes acima identificadas t&ecirc;m ente si, justo e acertado o presente Contrato de Loca&ccedil;&atilde;o de Ve&iacute;culo por Prazo Determinado, que se reger&aacute; pelas cl&aacute;usulas seguintes e pelas condi&ccedil;&otilde;es descritas no presente.</p>
 <p style="text-align: justify;">&nbsp;</p>
 <p style="text-align: justify;"><span style="text-decoration: underline;"><strong>DO OBJETO DO CONTRATO</strong></span></p>
