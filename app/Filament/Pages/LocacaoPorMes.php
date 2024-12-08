@@ -20,6 +20,7 @@ use pxlrbt\FilamentExcel\Actions\Tables\ExportBulkAction;
 
 class LocacaoPorMes extends Page implements HasTable
 {
+    #teste
     use InteractsWithTable;
 
     protected static ?string $navigationIcon = 'heroicon-o-document-text';

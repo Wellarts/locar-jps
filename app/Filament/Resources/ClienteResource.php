@@ -106,11 +106,11 @@ class ClienteResource extends Resource
                                 'xl' => 2,
                                 '2xl' => 2,
                             ])
-                            ->downloadable()
+                        ->downloadable()
                         ->label('Foto CNH'),
 
                 Forms\Components\DatePicker::make('data_nascimento')
-                    ->label('Data de Nascimento'),
+                            ->label('Data de Nascimento'),
                 ])
             ]);
     }
@@ -130,7 +130,7 @@ class ClienteResource extends Resource
                 ->label('Cidade'),
             Tables\Columns\TextColumn::make('telefone_1')
 
-             //   ->formatStateUsing(fn (string $state) => vsprintf('(%d%d)%d%d%d%d%d-%d%d%d%d', str_split($state)))
+              //  ->formatStateUsing(fn (string $state) => vsprintf('(%d%d)%d%d%d%d%d-%d%d%d%d', str_split($state)))
                 ->label('Telefone'),
 
             Tables\Columns\TextColumn::make('email')
